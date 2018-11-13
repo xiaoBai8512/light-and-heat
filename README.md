@@ -1,4 +1,4 @@
-# vue-demo
+# light-and-heat
 
 > A Vue.js project
 

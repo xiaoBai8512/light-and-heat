@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div class="content">
-			<h2>{{ msg }}</h2>
+			<h2 @click="onReturn">{{ msg }}</h2>
 		</div>
 	</div>
 </template>
@@ -14,6 +14,11 @@ export default {
 			msg:'太阳出来了，就一定会洒下光和热'
 		}
 	},
+	methods: {
+		onReturn(){
+			this.$router.go(-1)
+		}
+	},
 	components: {
 		Header,
 	},
@@ -23,7 +28,7 @@ export default {
 @import '../styles/theme.scss';
 .container {
 	margin: 0 auto;
-	.content{
+	.content {
 		margin: 14% auto 0;
 	}
 }
